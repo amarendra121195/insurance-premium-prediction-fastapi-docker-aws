@@ -41,3 +41,6 @@ def predict_premium(data: UserInput):
     except Exception as e:
 
         return JSONResponse(status_code=500, content=str(e))
+    
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', debug=True)
